@@ -9,6 +9,7 @@
  <title>@yield('title', 'LaraBBS')</title>
  <!-- Styles -->
  <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+ <link type="text/css" rel="styleSheet"  href="{{asset('css/style.css')}}">
 </head>
 <body>
  <div id="app" class="{{ route_class() }}-page">

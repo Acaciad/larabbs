@@ -1,4 +1,4 @@
-<footer class="footer" style="background: black;width: 100%;height: 60px;color: white;position: absolute;bottom: 0;">
+<footer class="footer">
  <div class="container">
  <p class="float-left">
  由 <a href="http://weibo.com/u/1837553744?is_hot=1" target="_blank">Zeng</a> 设计和编码 
