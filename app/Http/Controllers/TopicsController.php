@@ -1,11 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\User;
+
 use App\Models\Topic;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TopicRequest;
+use App\Models\Category;
+use Auth;
+use App\Handlers\ImageUploadHandler;
+use App\User;
+
 
 class TopicsController extends Controller
 {
