@@ -12,3 +12,6 @@ margin-bottom: 20px;
 	position: absolute;
 	bottom: 0;"
 }
+.img-responsive{
+	border-radius: 100%;
+}
