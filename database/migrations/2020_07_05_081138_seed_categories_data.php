@@ -45,3 +45,4 @@ class SeedCategoriesData extends Migration
         DB::table('categories')->truncate();
     }
 }
+
