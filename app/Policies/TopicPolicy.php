@@ -13,9 +13,10 @@ class TopicPolicy extends Policy
 	 return $topic->user_id == $user->id;
 	}
 
-
+	//将只允许作者对话题有删除权限
     public function destroy(User $user, Topic $topic)
-    {
-        return true;
-    }
+	{
+	 return $topic->user_id == $user->id;
+	}
+
 }

@@ -42,6 +42,7 @@ class User extends  Authenticatable implements MustVerifyEmailContract
     {
      return $this->hasMany(Topic::class);
     }
+    
 
 }
 
