@@ -17,3 +17,6 @@ margin-bottom: 20px;
 .img-responsive{
 	border-radius: 100%;
 }
+.simditor-body img {
+ max-width:100%;
+}
