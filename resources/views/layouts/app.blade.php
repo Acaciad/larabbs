@@ -10,6 +10,7 @@
  <!-- Styles -->
  <link href="{{ mix('css/app.css') }}" rel="stylesheet">
  <link type="text/css" rel="styleSheet"  href="{{asset('css/style.css')}}">
+ @yield('styles')
 </head>
 <body>
  <div id="app" class="{{ route_class() }}-page">
@@ -22,5 +23,7 @@
  </div>
  <!-- Scripts -->
  <script src="{{ mix('js/app.js') }}"></script>
+  @yield('scripts')
+
 </body>
 </html>
