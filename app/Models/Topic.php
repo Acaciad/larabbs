@@ -44,5 +44,11 @@ class Topic extends Model
 	 // 按照创建时间排序
 	 return $query->orderBy('created_at', 'desc');
 	 }
+	 //回复
+	 public function replies()
+	{
+	 	return $this->hasMany(Reply::class);
+	}
+
 
 }
