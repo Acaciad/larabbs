@@ -2,6 +2,8 @@
 
 namespace App;
 use App\Models\Topic;
+use App\Models\link;
+use App\Models\Reply;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;

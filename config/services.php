@@ -13,6 +13,8 @@ return [
     | to have a conventional place to find your various credentials.
     |
     */
+    
+
 
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
@@ -38,6 +40,11 @@ return [
             'secret' => env('STRIPE_WEBHOOK_SECRET'),
             'tolerance' => env('STRIPE_WEBHOOK_TOLERANCE', 300),
         ],
+    ],
+
+    'baidu_translate' => [
+     'appid' => env('BAIDU_TRANSLATE_APPID'),
+     'key' => env('BAIDU_TRANSLATE_KEY'),
     ],
 
 ];

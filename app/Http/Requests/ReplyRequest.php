@@ -30,6 +30,10 @@ class ReplyRequest extends Request
                 return [];
             };
         }
+        return [
+                 'content' => 'required|min:2',
+            ];
+
     }
 
     public function messages()
