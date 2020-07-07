@@ -14,11 +14,7 @@ class TopicReplied extends Notification
  // 注入回复实体，方便 toDatabase 方法中的使用
  $this->reply = $reply;
  }
- public function via($notifiable)
- {
- // 开启通知的频道
- return ['database'];
- }
+ 
  public function toDatabase($notifiable)
  {
  $topic = $this->reply->topic;
@@ -35,4 +31,20 @@ class TopicReplied extends Notification
  'topic_title' => $topic->title,
  ];
  }
+ 
+//邮件通知
+ public function via($notifiable)
+ {
+ // 开启通知的频道
+ return ['database', 'mail'];
+ }
+
+ public function toMail($notifiable)
+ {
+ $url = $this->reply->topic->link(['#reply' . $this->reply->id]);
+ return (new MailMessage)
+ ->line('你的话题有新回复！')
+ ->action('查看回复', $url);
+ }
+
 }
