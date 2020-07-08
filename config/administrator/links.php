@@ -1,12 +1,12 @@
 <?php
 
-use App\Models\Link;
+use App\Models\Links;
 
 return [
     'title'   => '资源推荐',
     'single'  => '资源推荐',
 
-    'model'   => Link::class,
+    'model'   => Links::class,
 
     // 访问权限判断
     'permission'=> function()

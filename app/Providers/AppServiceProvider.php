@@ -30,9 +30,10 @@ class AppServiceProvider extends ServiceProvider
         \App\Models\Reply::observe(\App\Observers\ReplyObserver::class);
         \App\Models\Topic::observe(\App\Observers\TopicObserver::class);
         \App\Models\Link::observe(\App\Observers\LinkObserver::class);
+        \App\Models\Links::observe(\App\Observers\LinkObserver::class);
 		\App\Models\Project::observe(\App\Observers\ProjectObserver::class);
 
-        //
+        //Carbon中文化设置
         \Carbon\Carbon::setLocale('zh');
     }
 }
