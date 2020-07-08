@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('title', '无权限访问')
-
 @section('content')
   <div class="col-md-4 offset-md-4">
     <div class="card ">
